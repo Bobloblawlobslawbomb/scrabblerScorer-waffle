@@ -12,9 +12,16 @@ namespace Scrabble
       TheWord = theWord;
     }
 
-    // public static WordGetter()
-    // {
+    public char[] WordArrayThang(string thing)
+    {
+      return thing.ToCharArray();
+    }
 
-    // }
+    public int ScoreAssign(char letter)
+    {
+      return letter;
+    }
+
   }
+
 }
