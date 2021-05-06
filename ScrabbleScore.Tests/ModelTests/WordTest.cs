@@ -70,10 +70,25 @@ namespace Scrabble.Tests
       int letterScore = 10;
 
       //Act
-      int resultScore = letterWord.ScoreAssign(resultArray[0]);
+      int resultScore = letterWord.ScoreAssign(resultArray);
 
       //Assert
       Assert.AreEqual(letterScore, resultScore);
+    }
+
+    [TestMethod]
+    public void ScoreAssign_AddScoreForAString_Score()
+    {
+      //Arrange
+      string wordTest = "quirky";
+      Word testWord = new Word(wordTest);
+      char[] quirkArray = testWord.WordArrayThang(testWord.TheWord);
+      int scoreQuirk = 22;
+      //Act
+      int result = testWord.ScoreAssign(quirkArray);
+
+      //Assert
+      Assert.AreEqual(scoreQuirk, result);
     }
   }
 }

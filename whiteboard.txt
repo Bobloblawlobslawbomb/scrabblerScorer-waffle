@@ -12,6 +12,9 @@ K                                  5
 J, X                               8
 Q, Z                               10
 
+quirky
+ = 10 + 1 + 1 + 1 + 5 + 4 = 22
+
 Key Arrays: //would each be a list? think about it.
 
 

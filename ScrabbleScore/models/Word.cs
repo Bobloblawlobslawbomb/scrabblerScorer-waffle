@@ -17,7 +17,7 @@ namespace Scrabble
       return thing.ToCharArray();
     }
 
-    public int ScoreAssign(char letter)
+    public int ScoreAssign(char[] letters)
     {
       // instantiate key array for scores
       // loop that compares the input letter to the key array and increments a score variable
@@ -26,9 +26,11 @@ namespace Scrabble
       int score = 0;
       int i = 0;
 
+      // wrap the loop starting on line 30 in another loop that  
+      // iterates through the input character array and returns
+      // the value at the index
       for (i = 0; i < worthTen.Length; i++)
-        // in JS, we could use Array.includes() to see if an element is there
-        if (letter == worthTen[i])
+        if (letters[i] == worthTen[i])
         {
           score = score + 10;
         }
