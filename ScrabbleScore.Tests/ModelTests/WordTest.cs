@@ -1,12 +1,34 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Scrabble;
+using System;
+using System.Collections.Generic;
 
 namespace Scrabble.Tests
 {
   [TestClass]
   public class WordTests
   {
-    // Test methods go here
+
+    [TestMethod]
+    public void WordConstructor_CreatesInstanceOfWord_Word()
+    {
+      Word newWord = new Word("test");
+      Assert.AreEqual(typeof(Word), newWord.GetType());
+    }
+
+    // [TestMethod]
+    // public void WordGetter_GetsAWord_Word()
+    // {
+    //   //Arrange
+    //   string wordTest = "balloon";
+
+    //   //Act
+    //   Word testWord = new Word(wordTest);
+
+    //   //Assert
+    //   Assert.AreEqual(testWord.TheWord, wordTest);
+    // }
+
   }
 }
 

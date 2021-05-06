@@ -11,3 +11,23 @@ F, H, V, W, Y                      4
 K                                  5
 J, X                               8
 Q, Z                               10
+
+Key Arrays: //would each be a list? think about it.
+
+
+For the letters:
+1) a database of the letter values
+worthOne = ["a", "e", "i", "o", "u", "l", "n", "r", "s", "t"];
+worthTwo = ["d", "g"];
+worthThree = ["b", "c", "m", "p"];
+worthFour = ["f", "h", "v", "w", "y"];
+worthFive = ["k"];
+worthEight = ["j", "x"];
+worthTen = ["q", "z"];
+
+For the words:
+1) needs to take a word
+2) needs to break the word into a character array or string array or list 
+3) determine all the values of the letters added together
+4) give back a score
+
