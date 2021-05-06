@@ -34,3 +34,13 @@ For the words:
 3) determine all the values of the letters added together
 4) give back a score
 
+
+
+      char[] worthEight = { 'j', 'x' };
+      char[] worthFive = { 'k' };
+      char[] worthFour = { 'f', 'h', 'v', 'w', 'y' };
+      char[] worthThree = { 'b', 'c', 'm', 'p' };
+      char[] worthTwo = { 'd', 'g' };
+      char[] worthOne = { 'a', 'e', 'i', 'o', 'u', 'r', 's', 't', 'l', 'n' };
+
+

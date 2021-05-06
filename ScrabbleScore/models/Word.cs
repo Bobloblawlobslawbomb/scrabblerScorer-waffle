@@ -25,18 +25,44 @@ namespace Scrabble
       char[] worthTen = { 'q', 'z' };
       int score = 0;
       int i = 0;
+      int k = 0;
 
       // wrap the loop starting on line 30 in another loop that  
       // iterates through the input character array and returns
       // the value at the index
-      for (i = 0; i < worthTen.Length; i++)
-        if (letters[i] == worthTen[i])
+      // char[] quirkArray = { 'q', 'u', 'i', 'r', 'k', 'y' };
+      // char[] worthTen = { 'q', 'z' };
+
+      //function checkWorthTen
+      for (k = 0; k < letters.Length; k++)
+      {
+        for (i = 0; i < worthTen.Length; i++)
         {
-          score = score + 10;
+          if (letters[k] == worthTen[i])
+          {
+            score = score + 10;
+            Console.WriteLine("Index values letters[i]: " + letters[i] + "; worthTen[i]: " + worthTen[i] + "; letters[k]: " + letters[k] + "; worthTen[k]: " + worthTen[k]);
+            Console.WriteLine(worthTen.Length + " and " + letters.Length);
+          }
+          else if (letters[k] != worthTen[i])
+          {
+            return score;
+          }
+          Console.WriteLine("k is currently: " + k + " i is currently: " + i);
         }
-      return score;
+      }
     }
 
   }
 
 }
+
+// int i, j;
+
+//          for (i = 2; i < 100; i++) {
+//             for (j = 2; j <= (i / j); j++)
+//             if ((i % j) == 0) break; // if factor found, not prime
+//             if (j > (i / j)) Console.WriteLine("{0} is prime", i);
+//          }
+
+
