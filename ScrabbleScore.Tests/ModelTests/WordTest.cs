@@ -16,18 +16,18 @@ namespace Scrabble.Tests
       Assert.AreEqual(typeof(Word), newWord.GetType());
     }
 
-    // [TestMethod]
-    // public void WordGetter_GetsAWord_Word()
-    // {
-    //   //Arrange
-    //   string wordTest = "balloon";
+    [TestMethod]
+    public void WordConstructor_SetsWordFieldInWordConstructor_Word()
+    {
+      //Arrange
+      string wordTest = "balloon";
 
-    //   //Act
-    //   Word testWord = new Word(wordTest);
+      //Act
+      Word testWord = new Word(wordTest);
 
-    //   //Assert
-    //   Assert.AreEqual(testWord.TheWord, wordTest);
-    // }
+      //Assert
+      Assert.AreEqual(testWord.TheWord, wordTest);
+    }
 
   }
 }
